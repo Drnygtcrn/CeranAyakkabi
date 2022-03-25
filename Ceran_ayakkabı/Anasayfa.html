@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head> <!-- Head başlangıcı -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ceran_Ayakkabı</title>          <!-- Site ismi ve uyumluluk için bazı kodlar  -->
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">   
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet"  href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">	  <!-- Bootstrap kütüphanesi ve kullandığım font referansı -->
+	</head><!-- Head sonu -->
+
+<body> <!-- Body başlangıcı -->
+	<header> <!-- Header başlangıcı -->
+		<nav id="header-nav" class="navbar navbar-default"> <!-- Bootstrap navbar kütüphanesi -->
+			<div class="container">
+				<div class="navbar-header">
+							<a href="Anasayfa.html" class="pull-left">
+			          <div id="logo-img" alt='Ceran Ayakkabıya Hoşgeldiniz'></div>
+			        </a>
+			        <a href="Anasayfa.html">
+			          <h1>Ceran Ayakkabı</h1>   <!-- Site Başlığı -->
+			        </a>	
+						 <div class="dropdown">
+							  <button onclick="myFunction1()" class="dropbtn">Erkek</button>  <!-- Dropdown menüsü ve menüde tıklama işleminde açılmasını 
+							  sağlamak için fonksiyon -->
+							  <div id="myDropdown1" class="dropdown-content">
+							    <a href="erkekspor.html">Erkek Spor Ayakkabıları</a>
+							    <a href="erkekbot.html">Erkek Botları</a>
+							    <a href="erkekterlik.html">Erkek Terlikleri</a>
+							  </div>
+							</div>
+						  <div class="dropdown">
+							  <button onclick="myFunction2()" class="dropbtn">Kadın</button>
+							  <div id="myDropdown2" class="dropdown-content">
+							    <a href="kadınspor.html">Kadın Spor Ayakkabıları</a>  <!-- Aynısı kadın kısmı için -->
+							    <a href="kadınbot.html">Kadın Botları</a>
+							    <a href="kadınterlik.html">Kadın Terlikleri </a>
+							  </div>
+						   </div>
+			
+				</div>
+				</div>
+
+			</nav>
+	</header> <!-- Header sonu -->
+
+	<div id="main-content" class="container">
+    <div class="jumbotron">      <!-- Anasayfa resmi için bootsrap jumbotron -->
+      <img src="img\AnaSayfa.jpg" alt="Ana Sayfa" class="img-responsive">
+    </div>
+
+    <div class="row">
+    	<div class="col-md-6 col-sm-6 col-xs-12">  <!-- Anasayfadaki kategorilere giden linkler, mid small ve xsmall tarayıcı için bootstrap classı -->
+        <a href="kadınbot.html"><div id="kadınbotindirim-tile"><span>Kadın Botlarında %30'a Varan İndirimler</span></div></a>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <a href="erkekspor.html"><div id="erkeksporindirim-tile"><span>Erkek Spor Ayakkabılarında %25'e Varan İndirimler</span></div></a>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <a href="kadın.html"><div id="kadın-tile"><span>Kadın Ana Sayfa</span></div></a>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <a href="erkek.html"><div id="erkek-tile"><span>Erkek Ana sayfa</span></div></a>
+      </div>
+
+    </div>
+    </div>
+
+    <footer class="panel-footer">  <!-- Site alt açıklamaları için footer -->
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Çalışma saatleri:</span><br>
+          Hafta içi: 10.00-00.00<br>
+          Hafta sonu: 10.00-22.00<br>
+          
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          Kazım Dirik mah.<br>
+          170.Sk Bina No:14
+          Bornova/İzmir
+
+          <hr class="visible-xs">
+        </section>
+        <section class="col-sm-4">
+        	<div>&copy; Copyright Ceran Ayakkabı 2021</div>
+        	<a href="Anasayfa.html" id="dön">Ana Sayfaya Dön</a> <!-- Adres Saat ve Copyright bilgileri -->
+        </section>
+      </div>
+      
+    </div>
+  </footer>
+
+	
+	<script  src="js/bootstrap.min.js"></script>  <!-- bootstrap ve kendi script referansları -->
+	<script  src="script.js"></script>
+
+</body> <!-- Body sonu -->
+</html>

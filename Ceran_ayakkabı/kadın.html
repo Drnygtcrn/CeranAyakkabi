@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	 <!-- AnaSayfa ile neredeyse aynı kodlar farkı içeriğindeki ayakkabı resimleri -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ceran_Ayakkabı</title>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet"  href="css/bootstrap.min.css">
+     	<link rel="stylesheet" type="text/css" href="style.css">	
+	</head>
+<body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+							<a href="Anasayfa.html" class="pull-left">
+			          <div id="logo-img" alt='Ceran Ayakkabıya Hoşgeldiniz'></div>
+			        </a>
+			        <a href="Anasayfa.html">
+			          <h1>Ceran Ayakkabı</h1>
+			        </a>
+
+			        
+			         <div class="dropdown">
+							  <button onclick="myFunction1()" class="dropbtn">Erkek</button>
+							  <div id="myDropdown1" class="dropdown-content">
+							    <a href="erkekspor.html">Erkek Spor Ayakkabıları</a>
+							    <a href="erkekbot.html">Erkek Botları</a>
+							    <a href="erkekterlik.html">Erkek Terlikleri</a>
+							  </div>
+							</div>
+						  <div class="dropdown">
+							  <button onclick="myFunction2()" class="dropbtn">Kadın</button>
+							  <div id="myDropdown2" class="dropdown-content">
+							    <a href="kadınspor.html">Kadın Spor Ayakkabıları</a>
+							    <a href="kadınbot.html">Kadın Botları</a>
+							    <a href="kadınterlik.html">Kadın Terlikleri </a>
+							  </div>
+						   </div>
+					</div>
+				</div>
+
+			</nav>
+	</header>
+
+	<div class="container">
+    <div class="jumbotron">
+      <img src="img\KadınAna.jpg" alt="Erkek Ana Sayfası" class="img-responsive">
+    </div>
+    <div id="home-tiles" class="row">
+    	<div class="col-md-6 col-sm-6 col-xs-12">
+        <a href="kadınspor.html"><div id="kadınsporana-tile"><span>Kadın Spor Ayakkabıları</span></div></a>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <a href="kadınterlik.html"><div id="kadınterlikana-tile"><span>Kadın Terlikleri</span></div></a>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <a href="kadınbot.html"><div id="kadınbotana-tile"><span>Kadın Botları</span></div></a>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <a href="kadınbot.html"><div id="kadınbotindirim-tile"><span>Kadın Botlarında %30'a Varan İndirimler</span></div></a>
+      </div>
+    </div>
+  </div>
+    <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Çalışma saatleri:</span><br>
+          Hafta içi: 10.00-00.00<br>
+          Hafta sonu: 10.00-22.00<br>
+          
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          Kazım Dirik mah.<br>
+          170.Sk Bina No:14
+          Bornova/İzmir
+
+          <hr class="visible-xs">
+        </section>
+        <section class="col-sm-4">
+        	<div>&copy; Copyright Ceran Ayakkabı 2021</div>
+        	<a href="Anasayfa.html" id="dön">Ana Sayfaya Dön</a>
+        </section>
+      </div>
+      
+    </div>
+  </footer>
+
+    
+
+	
+
+	<script  src="js/jquery-3.6.0.min.js"></script>
+	<script  src="js/bootstrap.min.js"></script>
+	<script  src="script.js"></script>
+
+</body>
+</html>

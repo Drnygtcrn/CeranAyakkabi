@@ -1,0 +1,418 @@
+body {
+
+	font-size: 16px;
+	color: #fff;
+	background-color: #fff  ;   /*  SAYFANIN ÜZERİNDEKİ YAZILARIN BOYUTU RENGİ VE SİTENİN ARKAPLAN RENGİ */
+	
+}
+.navbar-header a:hover, .navbar-header a:focus { /* SİTE İSMİNİN ÜZERİNE GELİNCE ALT TARAFINDAKİ ÇİZGİ GÖZÜKMEMESİ İÇİN */
+  text-decoration: none;
+}
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  border: 0;                            /* DROPDOWN BUTTONUN AYARLAMALARI */
+  
+  cursor: pointer;
+  margin: 10px 10px 10px 70px;   
+
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #AFAFAF;        /* BUTONA TIKLAYINCA ARKAPLAN RENGİ */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;  /* DROPDOWNLARIN POSİZYONU VE GÖRÜNÜMÜ */
+}
+
+.dropdown-content {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  display: none;
+  position: absolute;                            /*  DROPDOWN AYARLAMALARI  */
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;               /* DROPDOWN LINKLERI AYARLAMALARI*/
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd} /* DROPDOWN CONTETİNİN ÜZERİNE GELİNCE OLUŞACAK ARKA PLAN RENGİ */
+
+.show {display:block;}         /* DROPDOWN CONTENTI GÖRÜNÜNDE NAVBARDAN ÇIKIP GÖRÜNTÜYÜ BOZMAMASI */     
+
+#header-nav {
+	background-color: #fff ;
+	border-radius: 0;
+    border: 1;
+    border-top: 0;
+    border-left: 0;
+    border-right:0 ;
+    border-bottom: 1;
+    padding: 10px;
+    border-width:2px;   /* NAVBAR AYARLAMALARI */
+    
+    }
+#logo-img{ /* LOGO AYARLAMALARI */
+  background: url('./img/a.png') no-repeat;
+  width: 120px;
+  height: 120px;
+  margin: 10px 15px 10px 0;                
+}
+.navbar-header img{                /* LOGO AYARLAMALARI */
+	width: 130px;
+	height: 130px;
+	position: fixed;                 
+    left: 10px;
+    top: 10px;
+    margin: 10px;
+
+}
+.navbar-header h1{
+	 font-family: 'Quicksand', sans-serif;
+  	 font-size: 50px;
+  	 color: black;
+  	 font-weight:300;
+  	 margin-left: 50px;          /* SAYFA BAŞLIĞI AYARLAMALARI */
+}
+
+
+.nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
+    margin-top: 0;        /* BU CLASSLARIN MARGİNİNİ AYARLAMA */
+}
+.container .jumbotron {
+ 
+  padding: 0;
+  border: 3px solid #3F0C1F;
+  box-shadow: 0 0 5px #3F0C1F;  /* JUMBOTRON AYARLAMALARI */
+
+}
+#erkeksporindirim-tile, #kadınbotindirim-tile, #erkekbotana-tile, #kadınbotana-tile{
+  height: 350px;
+  
+  width: 100%;
+  margin-bottom: 15px;
+  
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;                     /* İNDİRİM GÖRSELLERİ VE ONUNLA YAN YANA OLACAĞINDAN UYUMLU OLSUN DİYE
+                                               ERKEK VE KADIN BOT RESİMLERİ */
+}
+.ürünler{
+  height: 250px;
+  
+  width: 100%;
+  margin-bottom: 15px;
+  
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;                      /* ÜRÜNLERİN AYARLAMALARI */
+}
+.ürünler span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Quicksand', sans-serif;       /* ÜRÜNLERİN ALT YAZISININ AYARLAMALARI */
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+#erkek-tile, #kadın-tile, #erkeksporana-tile, #erkekterlikana-tile ,#kadınsporana-tile, #kadınterlikana-tile
+{
+  height: 250px;
+  
+  width: 100%;
+  margin-bottom: 15px;
+  
+  position: relative;                      /* KADIN BOT VE ERKEK SPOR HARİCİ ANA RESİMLERİN AYARLAMALARI */
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+
+#erkek-tile:hover, #kadın-tile:hover,#erkeksporana-tile:hover, #erkekterlikana-tile:hover,#erkekbotana-tile:hover,
+#erkeksporindirim-tile:hover, #kadınbotindirim-tile:hover,#kadınsporana-tile:hover, #kadınterlikana-tile:hover,#kadınbotana-tile:hover{
+  box-shadow: 0 3px 15px 3px #cccccc;             /* LİNKLERİN ÜZERİNE GELİNCE GÖLGE OLMASI */
+}
+#erkek-tile {
+  background: url('./img/erkek-title.jpg') no-repeat;
+  background-position: center;                    /* GÖRSELLERİN DOSYALARDAN İD LERE ÇEKİLME İŞLEMLERİ.. */
+}
+#kadın-tile {
+
+  background: url('./img/kadın-title.jpg') no-repeat;
+  background-position: center;
+}
+#erkeksporindirim-tile {
+  background: url('./img/indirim2.jpg') no-repeat;
+  background-position: center;
+}
+#kadınbotindirim-tile {
+  background: url('./img/indirim1.jpg') no-repeat;
+  background-position: center;
+}
+#erkeksporana-tile {
+  background: url('./img/ErkekSporAna.jpg') no-repeat;
+  background-position: center;
+}
+#erkekterlikana-tile {
+  background: url('./img/ErkekTerlikAna.jpg') no-repeat;
+  background-position: center;
+}
+#erkekbotana-tile {
+  background: url('./img/ErkekBotAna.jpg') no-repeat;
+  background-position: center;
+}
+#kadınsporana-tile {
+  background: url('./img/KadınSporAna.jpg') no-repeat;
+  background-position: center;
+}
+#kadınterlikana-tile {
+  background: url('./img/KadınTerlikAna.jpg') no-repeat;
+  background-position: center;
+}
+#kadınbotana-tile {
+  background: url('./img/KadınBotAna.jpg') no-repeat;
+  background-position: center;
+}
+#erkekspor1-tile{
+  background: url('./img/erkekspor1.jpg') no-repeat;
+  background-position: center;
+}
+#erkekspor2-tile{
+  background: url('./img/erkekspor2.jpg') no-repeat;
+  background-position: center;
+}
+#erkekspor3-tile{
+  background: url('./img/erkekspor3.jpg') no-repeat;
+  background-position: center;
+}
+#erkekspor4-tile{
+  background: url('./img/erkekspor4.jpg') no-repeat;
+  background-position: center;
+}
+#erkekspor5-tile{
+  background: url('./img/erkekspor5.jpg') no-repeat;
+  background-position: center;
+}
+#erkekspor6-tile{
+  background: url('./img/erkekspor6.jpg') no-repeat;
+  background-position: center;
+}
+#erkekspor7-tile{
+  background: url('./img/erkekspor7.jpg') no-repeat;
+  background-position: center;
+}
+#erkekspor8-tile{
+  background: url('./img/erkekspor8.jpg') no-repeat;
+  background-position: center;
+}
+#erkekspor9-tile{
+  background: url('./img/erkekspor9.jpg') no-repeat;
+  background-position: center;
+}
+#erkekterlik1-tile{
+  background: url('./img/erkekterlik1.jpg') no-repeat;
+  background-position: center;
+}
+#erkekterlik2-tile{
+  background: url('./img/erkekterlik2.jpg') no-repeat;
+  background-position: center;
+}
+#erkekterlik3-tile{
+  background: url('./img/erkekterlik3.jpg') no-repeat;
+  background-position: center;
+}
+#erkekterlik4-tile{
+  background: url('./img/erkekterlik4.jpg') no-repeat;
+  background-position: center;
+}
+#erkekterlik5-tile{
+  background: url('./img/erkekterlik5.jpg') no-repeat;
+  background-position: center;
+}
+#erkekterlik6-tile{
+  background: url('./img/erkekterlik6.jpg') no-repeat;
+  background-position: center;
+}
+#erkekbot1-tile{
+  background: url('./img/erkekbot1.jpg') no-repeat;
+  background-position: center;
+}
+#erkekbot2-tile{
+  background: url('./img/erkekbot2.jpg') no-repeat;
+  background-position: center;
+}
+#erkekbot3-tile{
+  background: url('./img/erkekbot3.jpg') no-repeat;
+  background-position: center;
+}
+#erkekbot4-tile{
+  background: url('./img/erkekbot4.jpg') no-repeat;
+  background-position: center;
+}
+#erkekbot5-tile{
+  background: url('./img/erkekbot5.jpg') no-repeat;
+  background-position: center;
+}
+#erkekbot6-tile{
+  background: url('./img/erkekbot6.jpg') no-repeat;
+  background-position: center;
+}
+#kadınspor1-tile{
+  background: url('./img/kadınspor1.jpg') no-repeat;
+  background-position: center;
+}
+#kadınspor2-tile{
+  background: url('./img/kadınspor2.jpg') no-repeat;
+  background-position: center;
+}
+#kadınspor3-tile{
+  background: url('./img/kadınspor3.jpg') no-repeat;
+  background-position: center;
+}
+#kadınspor4-tile{
+  background: url('./img/kadınspor4.jpg') no-repeat;
+  background-position: center;
+}
+#kadınspor5-tile{
+  background: url('./img/kadınspor5.jpg') no-repeat;
+  background-position: center;
+}
+#kadınspor6-tile{
+  background: url('./img/kadınspor6.jpg') no-repeat;
+  background-position: center;
+}
+#kadınspor7-tile{
+  background: url('./img/kadınspor7.jpg') no-repeat;
+  background-position: center;
+}
+#kadınspor8-tile{
+  background: url('./img/kadınspor8.jpg') no-repeat;
+  background-position: center;
+}
+#kadınspor9-tile{
+  background: url('./img/kadınspor9.jpg') no-repeat;
+  background-position: center;
+}
+#kadınterlik1-tile{
+  background: url('./img/kadınterlik1.jpg') no-repeat;
+  background-position: center;
+}
+#kadınterlik2-tile{
+  background: url('./img/kadınterlik2.jpg') no-repeat;
+  background-position: center;
+}
+#kadınterlik3-tile{
+  background: url('./img/kadınterlik3.jpg') no-repeat;
+  background-position: center;
+}
+#kadınterlik4-tile{
+  background: url('./img/kadınterlik4.jpg') no-repeat;
+  background-position: center;
+}
+#kadınterlik5-tile{
+  background: url('./img/kadınterlik5.jpg') no-repeat;
+  background-position: center;
+}
+#kadınterlik6-tile{
+  background: url('./img/kadınterlik6.jpg') no-repeat;
+  background-position: center;
+}
+#kadınbot1-tile{
+  background: url('./img/kadınbot1.jpg') no-repeat;
+  background-position: center;
+}
+#kadınbot2-tile{
+  background: url('./img/kadınbot2.jpg') no-repeat;
+  background-position: center;
+}
+#kadınbot3-tile{
+  background: url('./img/kadınbot3.jpg') no-repeat;
+  background-position: center;
+}
+#kadınbot4-tile{
+  background: url('./img/kadınbot4.jpg') no-repeat;
+  background-position: center;
+}
+#kadınbot5-tile{
+  background: url('./img/kadınbot5.jpg') no-repeat;
+  background-position: center;
+}
+#kadınbot6-tile{
+  background: url('./img/kadınbot6.jpg') no-repeat;
+  background-position: center;
+}
+
+#erkeksporindirim-tile span, #kadınbotindirim-tile span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;                                     /* KADIN VE ERKEK İNDİRİM AÇIKLAMA YAZILARI AYARLAMALARI */                                      
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Quicksand', sans-serif;
+  
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+#erkek-tile span, #kadın-tile span,#erkeksporana-tile span, #erkekterlikana-tile span,#erkekbotana-tile span,
+#kadınsporana-tile span, #kadınterlikana-tile span,#kadınbotana-tile span                                    
+{                                                
+  position: absolute;
+  bottom: 0;
+  right: 0;                                             /* KADIN VE ERKEK İNDİRİM HARİCİ AÇIKLAMA YAZILARI AYARLAMALARI */
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;                              /* FOOTER AYARLAMALARI */
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+
+}
+#dön{
+  color: #557c3e;
+  font-size: .8em;               /* FOOTERDERİ ANA SAYFAYA DÖNME YAZISI AYARLAMALARI */
+  line-height: 1.8;
+
+}
+
